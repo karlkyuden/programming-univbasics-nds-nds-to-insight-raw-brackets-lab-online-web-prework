@@ -9,7 +9,7 @@ def directors_totals(nds)
   while row_index < directors_database.length do
     column_index = 0
     grandTotal = 0
-    while column_index < directors_database[row_index].length do
+    while column_index < directors_database[row_index][:movies].length do
       grandTotal +=directors_database[row_index][:movies][column_index][:worldwide_gross]
       puts "The grandTotal at the moment is #{grandTotal}"
       column_index += 1
