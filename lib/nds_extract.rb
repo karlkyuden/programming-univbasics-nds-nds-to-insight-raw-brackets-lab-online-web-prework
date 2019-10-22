@@ -19,6 +19,6 @@ def directors_totals(nds)
     newHash[director] = grandTotal
     row_index += 1
   end
-  puts newHash
+  return newHash
 end
 
