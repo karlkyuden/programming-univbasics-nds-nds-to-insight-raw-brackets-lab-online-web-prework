@@ -11,13 +11,11 @@ def directors_totals(nds)
     grandTotal = 0
     while column_index < directors_database[row_index].length do
       grandTotal +=directors_database[row_index][:movies][column_index][:worldwide_gross]
-      
-      
+
       column_index += 1
     end
     
     director = directors_database[row_index][:name]
-    puts director
     newHash[director] = grandTotal
     row_index += 1
   end
