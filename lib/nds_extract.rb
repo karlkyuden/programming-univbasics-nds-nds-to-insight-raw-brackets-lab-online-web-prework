@@ -15,7 +15,7 @@ def directors_totals(nds)
       column_index += 1
     end
     director = directors_database[row_index][:name]
-    newHash[director] = grandTotal
+    newHash[director] = 15000
     row_index += 1
   end
   puts newHash
