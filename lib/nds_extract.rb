@@ -16,7 +16,7 @@ def directors_totals(nds)
     
     director = directors_database[row_index][:name]
     newHash[director] = grandTotal
-    puts grandTotal
+    puts "The grand total of #{director} is #{grandTotal}"
     row_index += 1
   end
   return newHash
