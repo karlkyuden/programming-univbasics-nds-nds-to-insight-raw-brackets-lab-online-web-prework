@@ -3,8 +3,6 @@ require 'directors_database'
 
 def directors_totals(nds)
 
-  pp nds
-
   newHash = Hash.new
   row_index = 0
   grandTotal = 0
@@ -16,10 +14,10 @@ def directors_totals(nds)
       
       column_index += 1
     end
-   #director = directors_database[row_index][:name]
-    #newHash[director] = grandTotal
+    director = directors_database[row_index][:name]
+    newHash[director] = grandTotal
     row_index += 1
   end
-
+  puts newHash
 end
 
